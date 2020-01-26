@@ -1,6 +1,6 @@
 # King's Thursday Bootcamp on GoLang
 
-The subject matter of this bootcamp is the Go Programming Language. We will look at some basic principles of Go and some popular frameworks that are frequently use to build REST Api's, and then we will build from scratch one simple Web REST Api for an grocery store.
+The subject matter of this bootcamp is the Go Programming Language. We will look at some basic principles of Go and some popular frameworks that are frequently use to build REST Api's, and then we will build from scratch one simple Web REST Api for an todo application.
 
 ## Agenda
 
