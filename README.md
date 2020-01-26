@@ -97,7 +97,7 @@ Content-Type: application/json
 }
 ```
 
-#### Update a Todo: `POST /todo/<uuid>`
+#### Update a Todo: `PUT /todo/<uuid>`
 
 Update your todo with new data:
 
@@ -118,7 +118,7 @@ POST /todo/eef9c28f-ebe5-4a39-8fa7-78c7d917a1b2
 HTTP/1.0 200 OK
 ```
 
-#### Retrieve a Todos by Project: `GET /todo/<project>`
+#### Retrieve a Todo by Project: `GET /todo/<project>`
 
 ```
 GET /todo/work
@@ -148,4 +148,32 @@ Content-Type: application/json
         "priority": "4"
     }
 ]
+```
+
+### Delete a Todo by uuid: `DELETE /todo/<uuid>`
+
+Delete the desired todo by its uuid and then retrieve all the todos, 
+so you can se the remaining entries.
+
+```
+DELETE /todo/eef9c28f-ebe5-4a39-8fa7-78c7d917a1b2
+```
+
+```
+HTTP/1.0 200 OK
+Content-Type: application/json
+
+{
+    "todos" : [
+        {
+            "name": "Attend Artificial Inteligence Laboratory",
+            "description": "",
+            "project": "University",
+            "id": "693cc8a2-75f0-4c09-9b42-c5a3f6a2c9ab",
+            "date": "1/9/2019",
+            "time": "13:00 PM",
+            "priority": "3"
+        },
+    ]
+}
 ```
